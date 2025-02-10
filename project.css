@@ -13,22 +13,40 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-h1{
+h1 {
   text-align: center;
   margin: 100px auto 50px;
-  font-weight: 600px;
+  font-weight: 600;
   color: azure;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: #620983c5;
+  text-shadow: 2px 2px 5px purple;
+  transform: scale(1.1);
+  cursor: grab;
+  text-decoration: underline ;
+}
+h1:active {
+  color: #05c3e5;
+  text-shadow: rgb(6, 231, 25);
+  transform: scale(1.2);
+  cursor: grabbing;
 }
 form{
   width: 90%;
   max-width: 600px;
   margin: auto;
-  height: 100px;
-  background: #434989;
+  height: 70px;
+  background-color: rgba(119, 11, 119, 0.5); /* Semi-transparent violet */
+  
   display: flex;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 80px;
+  border-top-right-radius: 800px;
+  border-bottom-right-radius: 80px;
 }
 form input{
   flex: 1;
@@ -41,16 +59,24 @@ form input{
   padding: 0 30px;
 }
 form button{
-  padding: 0 40px;
-  height: 100%;
-  background: #a929ff;
+  padding: 0 35px;
+  height: 102%;
+  background: blueviolet;
   color: #fff;
   font-size: 18px;
   border: 0;
   outline: 0;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: 800px;
+  border-bottom-right-radius: 80px;
   cursor: pointer;
+}
+form button:hover {
+  background-color: rgba(255, 11, 255, 0.5);
+  transform: scale(1.1);
+}
+form button:active {
+  background-color: rgb(146, 13, 255);
+  cursor: progress;
 }
 ::placeholder{
   font-size: 18px;
